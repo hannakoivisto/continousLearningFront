@@ -12,6 +12,7 @@ export default class Rest extends Component {
                     })
                     }
                 </ul>
+                <p><button type="button" onClick={this.deleteTopic}></button></p>
             </div>
         )
     }
