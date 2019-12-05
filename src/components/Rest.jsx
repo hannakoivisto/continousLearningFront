@@ -6,7 +6,7 @@ export default class Topiccompiler extends Component {
     componentDidMount = () => {
         this.xhr = new XMLHttpRequest();
         this.xhr.onreadystatechange = this.onReadyStateChanged;
-        this.xhr.open('GET', '/api/topics', true);
+        this.xhr.open('GET', 'http://localhost:8080/api/topics', true);
         this.xhr.send();
     }
     onReadyStateChanged = () => {
